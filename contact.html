@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The Kova</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">The Kova</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you</p>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.9317719426526!2d-74.10410639999999!3d40.587261399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa735a70bfd%3A0x63575e101ad7db65!2sThe%20KOVA!5e0!3m2!1sen!2sus!4v1759699689691!5m2!1sen!2sus"
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <h3 style="color: #c08835; margin-bottom: 1rem;">Send us a Message</h3>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone (Optional)</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <h3></h3>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/thekovanyc/" aria-label="Facebook">📘</a>
+                    <a href="https://www.instagram.com/thekovanyc/" aria-label="Instagram">📷</a>
+                    <a href="https://www.tiktok.com/@thekovanyc" aria-label="TikTok">🎵</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Business Hours</h3>
+                <ul class="hours-list">
+                    <li>Monday: 9am - 4pm</li>
+                    <li>Tuesday: Closed</li>
+                    <li>Wednesday: 9am - 4pm</li>
+                    <li>Thursday: 9am - 4pm</li>
+                    <li>Friday: 9am - 4pm</li>
+                    <li>Saturday: 9am - 4pm</li>
+                    <li>Sunday: 9am - 4pm</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>1775B Richmond Rd</p>
+                <p>Staten Island, NY 10306</p>
+                <p>Phone: (646) 577-5500</p>
+                <p>Email: thekovanyc@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Kova - Your Local Coffee, Breakfast, Brunch Spot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">The Kova</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>The Kova</h1>
+            <p>Your Local Coffee, Breakfast, Brunch Spot</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-slider">
+            <button class="slider-btn prev" onclick="changeSlide(-1)">❮</button>
+            <div class="slides" id="slides">
+                <div class="slide">
+                    <img src="https://thekovanyc.com/photos/eggs.JPG" alt="Eggs">
+                </div>
+                <div class="slide">
+                    <img src="https://thekovanyc.com/photos/latte.JPG" alt="Coffee">
+                </div>
+                <div class="slide">
+                    <img src="https://thekovanyc.com/photos/pancake.JPG" alt="Pancakes">
+                </div>
+                <div class="slide">
+                    <img src="https://thekovanyc.com/photos/bec.JPG" alt="Burger">
+                </div>
+                <div class="slide">
+                    <img src="https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_1200,q_auto,fl_lossy,dpr_auto,c_fill,f_auto,h_800,g_auto/srr4kaz15iieqfmghejd" alt="Lots of food">
+                </div>
+                <div class="slide">
+                    <img src="https://d1ralsognjng37.cloudfront.net/ba431089-b764-48b7-946b-a24619dbe75b.jpeg" alt="Beef roti">
+                </div>
+            </div>
+            <button class="slider-btn next" onclick="changeSlide(1)">❯</button>
+        </div>
+        <div class="slider-dots" id="sliderDots"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/thekovanyc/" aria-label="Facebook">📘</a>
+                    <a href="https://www.instagram.com/thekovanyc/" aria-label="Instagram">📷</a>
+                    <a href="https://www.tiktok.com/@thekovanyc" aria-label="TikTok">🎵</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Business Hours</h3>
+                <ul class="hours-list">
+                    <li>Monday: 9am - 4pm</li>
+                    <li>Tuesday: Closed</li>
+                    <li>Wednesday: 9am - 4pm</li>
+                    <li>Thursday: 9am - 4pm</li>
+                    <li>Friday: 9am - 4pm</li>
+                    <li>Saturday: 9am - 4pm</li>
+                    <li>Sunday: 9am - 4pm</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>1775B Richmond Rd</p>
+                <p>Staten Island, NY 10306</p>
+                <p>Phone: (646) 577-5500</p>
+                <p>Email: thekovanyc@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

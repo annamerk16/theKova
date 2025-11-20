@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - The Kova</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">The Kova</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="cart-icon" id="cartIcon">
+                🛒 <span class="cart-count" id="cartCount">0</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Shopping Cart -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <button class="close-cart" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <strong>Total:</strong>
+                    <span id="cartTotal">$0.00</span>
+                </div>
+                <button class="clear-cart-btn" id="clearCart">Clear Cart</button>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Our Menu</h1>
+        <p>Discover our selection of dishes</p>
+    </div>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <div class="menu-grid">
+            <div class="menu-card">
+                <h3>Egg Dishes</h3>
+                <div class="menu-item" data-name="Mushroom & Onion Omelette" data-price="12">
+                    <div class="item-info">
+                        <span class="item-name">Mushroom & Onion Omelette </span>
+                        <span class="item-price">$12</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Spinach & Cheese Omelette" data-price="12">
+                    <div class="item-info">
+                        <span class="item-name">Spinach & Cheese Omelette</span>
+                        <span class="item-price">$12</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Egg Florentine" data-price="13">
+                    <div class="item-info">
+                        <span class="item-name">Egg Florentine</span>
+                        <span class="item-price">$13</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Eggs Benedict" data-price="13">
+                    <div class="item-info">
+                        <span class="item-name">Eggs Benedict</span>
+                        <span class="item-price">$13</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Eggs Royale" data-price="13">
+                    <div class="item-info">
+                        <span class="item-name">Eggs Royale</span>
+                        <span class="item-price">$13</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <h3>Sweet & Savory</h3>
+                <div class="menu-item" data-name="Pancakes" data-price="12.50">
+                    <div class="item-info">
+                        <span class="item-name">Pancakes</span>
+                        <span class="item-price">$12.50</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="French Toast" data-price="12.50">
+                    <div class="item-info">
+                        <span class="item-name">French Toast</span>
+                        <span class="item-price">$12.50</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Belgian Waffles with Nutella" data-price="12.50">
+                    <div class="item-info">
+                        <span class="item-name">Belgian Waffles with Nutella</span>
+                        <span class="item-price">$12.50</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Fruit Salad" data-price="8">
+                    <div class="item-info">
+                        <span class="item-name">Fruit Salad</span>
+                        <span class="item-price">$8</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Green Salad" data-price="7.50">
+                    <div class="item-info">
+                        <span class="item-name">Green Salad</span>
+                        <span class="item-price">$7.50</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <h3>Burgers & Sandwiches</h3>
+                <div class="menu-item" data-name="Bacon, Egg, and Cheese" data-price="8.50">
+                    <div class="item-info">
+                        <span class="item-name">Bacon, Egg, and Cheese</span>
+                        <span class="item-price">$8.50</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Fried Chicken Sandwich" data-price="13.50">
+                    <div class="item-info">
+                        <span class="item-name">Fried Chicken Sandwich</span>
+                        <span class="item-price">$13.50</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Sriracha Jam Grilled Cheese" data-price="6.50">
+                    <div class="item-info">
+                        <span class="item-name">Sriracha Jam Grilled Cheese</span>
+                        <span class="item-price">$6.50</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Cheeseburger" data-price="15">
+                    <div class="item-info">
+                        <span class="item-name">Cheeseburger</span>
+                        <span class="item-price">$15</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <h3>Roti & Sides</h3>
+                <div class="menu-item" data-name="Beef Roti" data-price="13">
+                    <div class="item-info">
+                        <span class="item-name">Beef Roti</span>
+                        <span class="item-price">$13</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Chicken Roti" data-price="13">
+                    <div class="item-info">
+                        <span class="item-name">Chicken Roti</span>
+                        <span class="item-price">$13</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Sweet Potato Fries" data-price="7">
+                    <div class="item-info">
+                        <span class="item-name">Sweet Potato Fries</span>
+                        <span class="item-price">$7</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Spicy Hand Cut Fries" data-price="7">
+                    <div class="item-info">
+                        <span class="item-name">Spicy Hand Cut Fries</span>
+                        <span class="item-price">$7</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Hand Cut Fries" data-price="6">
+                    <div class="item-info">
+                        <span class="item-name">Hand Cut Fries</span>
+                        <span class="item-price">$6</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <h3>Drinks</h3>
+                <div class="menu-item" data-name="Espresso" data-price="3.25">
+                    <div class="item-info">
+                        <span class="item-name">Espresso</span>
+                        <span class="item-price">$3.25</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Latte" data-price="3.25">
+                    <div class="item-info">
+                        <span class="item-name">Latte</span>
+                        <span class="item-price">$3.25</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Cappuccino" data-price="4.25">
+                    <div class="item-info">
+                        <span class="item-name">Cappuccino</span>
+                        <span class="item-price">$4.25</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Matcha Latte" data-price="5.50">
+                    <div class="item-info">
+                        <span class="item-name">Matcha Latte</span>
+                        <span class="item-price">$5.50</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Chai Latte" data-price="5.50">
+                    <div class="item-info">
+                        <span class="item-name">Chai Latte</span>
+                        <span class="item-price">$5.50</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <h3>Specials</h3>
+                <div class="menu-item" data-name="The Kova Breakfast" data-price="15">
+                    <div class="item-info">
+                        <span class="item-name">The Kova Breakfast</span>
+                        <span class="item-price">$15</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="The Kova Latte" data-price="6">
+                    <div class="item-info">
+                        <span class="item-name">The Kova Latte</span>
+                        <span class="item-price">$6</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Homemade Hibiscus Lemonade" data-price="5">
+                    <div class="item-info">
+                        <span class="item-name">Homemade Hibiscus Lemonade</span>
+                        <span class="item-price">$5</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-name="Homemade Lavendar Lemonade" data-price="5">
+                    <div class="item-info">
+                        <span class="item-name">Homemade Lavendar Lemonade</span>
+                        <span class="item-price">$5</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/thekovanyc/" aria-label="Facebook">📘</a>
+                    <a href="https://www.instagram.com/thekovanyc/" aria-label="Instagram">📷</a>
+                    <a href="https://www.tiktok.com/@thekovanyc" aria-label="TikTok">🎵</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Business Hours</h3>
+                <ul class="hours-list">
+                    <li>Monday: 9am - 4pm</li>
+                    <li>Tuesday: Closed</li>
+                    <li>Wednesday: 9am - 4pm</li>
+                    <li>Thursday: 9am - 4pm</li>
+                    <li>Friday: 9am - 4pm</li>
+                    <li>Saturday: 9am - 4pm</li>
+                    <li>Sunday: 9am - 4pm</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>1775B Richmond Rd</p>
+                <p>Staten Island, NY 10306</p>
+                <p>Phone: (646) 577-5500</p>
+                <p>Email: thekovanyc@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
