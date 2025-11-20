@@ -1,4 +1,4 @@
-# annamerk16.github.io
+# annamerk16.github.io/theKova
 Web Dev: Homework 1
 
 Project Requirements 
